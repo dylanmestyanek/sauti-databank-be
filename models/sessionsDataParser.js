@@ -2,8 +2,6 @@ require("dotenv").config();
 const Sessions = require("./sessions-model");
 let unserializer = require("php-unserialize");
 const InfoDemand = require("./infodemand-model");
-const db = require("../data/dbConfig");
-
 
 //sessionsDataParser parses info stored in the DATA COLUMN of platform_sessions table in PHP serialized format, and populates it into new tables to enable building a BE/FE for data portal.
 
