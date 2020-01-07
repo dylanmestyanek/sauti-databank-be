@@ -6,7 +6,7 @@ const cron = require("node-cron");
 
 const sessionDataParse = require("./models/sessionsDataParser");
 
-cron.schedule("*/1 * * * *", () => {
+cron.schedule("*/15 * * * *", () => {
   sessionDataParse();
 });
 
