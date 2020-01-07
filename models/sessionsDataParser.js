@@ -137,7 +137,7 @@ function sessionDataParse(){
             console.log("Failed to batch insert");
         }
       }
-    )
+    ).catch(err => console.log("BROKEN", err))
   } catch ({ message }) {
     console.log("message", message);
   } // If data retrieval unsuccessful, recieve an error message.
